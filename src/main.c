@@ -26,6 +26,10 @@ int main () {
 	if (result == ROOT_NOT_FOUND) {
 		printf("no roots");
 	}
+	
+	if (result == NON_QUADRATIC_EQUATION) {
+		printf("ERROR - non quadratic equation")
+	}
 
 	return 0;
 }
