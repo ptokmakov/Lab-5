@@ -28,7 +28,7 @@ int main () {
 	}
 	
 	if (result == NON_QUADRATIC_EQUATION) {
-		printf("ERROR - non quadratic equation")
+		printf("ERROR - non quadratic equation");
 	}
 
 	return 0;
