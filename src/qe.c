@@ -1,6 +1,9 @@
 #include "qe.h"
 
-int quadratic_equation(float a, float b, float d, float *x1, float *x2) {
+int quadratic_equation(float a, float b, float d,  float *x1, float *x2) {
+	if (a == 0) {
+		return NON_QE;
+	}
 	if (d > 0) {
 		*x1 = (-b + sqrt(d)) / (2 * a);
 		*x2 = (-b - sqrt(d)) / (2 * a);
@@ -12,6 +15,8 @@ int quadratic_equation(float a, float b, float d, float *x1, float *x2) {
 		return FOUND_1_ROOT;
 	}
 
-	if (d < 0)
+	if (d < 0) {
 		return ROOT_NOT_FOUND;
+	}
+
 }
