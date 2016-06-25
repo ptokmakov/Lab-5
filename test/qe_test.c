@@ -50,16 +50,3 @@ CTEST(solution_of_quadratic_equations, no_root) {
 	// Then
 	ASSERT_EQUAL(ROOT_NOT_FOUND, result);
 }
-
-CTEST(solution_of_quadratic_equations, non_quadratic_equation) {
-	// Given
-	const float a = 0;
-	const float b = 25;
-	const float d = 125;
-
-	// When
-	float x1, x2;
-	const int result = quadratic_equation(a, b, d, &x1, &x2);
-
-	// Then
-	ASSERT_EQUAL(ROOT_NOT_FOUND, NON_QUADRATIC_EQUATION);
