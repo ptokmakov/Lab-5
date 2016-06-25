@@ -62,4 +62,4 @@ CTEST(solution_of_quadratic_equations, non_quadratic_equation) {
 	const int result = quadratic_equation(a, b, d, &x1, &x2);
 
 	// Then
-	ASSERT_EQUAL(NON_QUADRATIC_EQUATION);
+	ASSERT_EQUAL(ROOT_NOT_FOUND, NON_QUADRATIC_EQUATION);
